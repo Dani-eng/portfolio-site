@@ -38,7 +38,7 @@ a {
   margin: auto;
 }
 
-.skip-link {
+/*.skip-link {
   position: absolute;
   left: -999px;
   top: 1rem;
@@ -50,6 +50,22 @@ a {
 
 .skip-link:focus {
   left: 1rem;
+}*/
+
+.skip-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  background: #087f72;
+  border-radius: 0.5rem;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 header {
@@ -67,6 +83,17 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-toggle {
+  order: -1;
+  white-space: nowrap;
 }
 
 .brand {
@@ -175,6 +202,11 @@ h1 span {
 
 .button.secondary {
   background: rgba(255, 255, 255, .03);
+}
+
+.theme-toggle {
+  cursor: pointer;
+  font: inherit;
 }
 
 .quick-facts {
@@ -367,6 +399,69 @@ footer {
 :focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
+}
+
+/* Light theme */
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f7fb;
+  --panel: #ffffff;
+  --panel-light: #eaf0f7;
+  --text: #172033;
+  --muted: #526079;
+  --accent: #087f72;
+  --accent-2: #6554c0;
+  --border: rgba(23, 32, 51, .16);
+}
+
+html[data-theme="light"] body {
+  background:
+    radial-gradient(ellipse at 85% 5%, rgba(8, 127, 114, .09), transparent 28rem),
+    var(--bg);
+}
+
+html[data-theme="light"] header {
+  background: rgba(244, 247, 251, .9);
+}
+
+html[data-theme="light"] .hero h2 {
+  color: #34415a;
+}
+
+html[data-theme="light"] .button.secondary {
+  background: rgba(23, 32, 51, .03);
+}
+
+html[data-theme="light"] .button.primary {
+  color: #fff;
+}
+
+html[data-theme="light"] .pill,
+html[data-theme="light"] .tag {
+  color: #34415a;
+}
+
+html[data-theme="light"] .card {
+  background: linear-gradient(145deg, #fff, #f7f9fc);
+}
+
+html[data-theme="light"] .project-top {
+  background:
+    radial-gradient(circle at 30% 35%, rgba(8, 127, 114, .14), transparent 28%),
+    radial-gradient(circle at 75% 70%, rgba(101, 84, 192, .15), transparent 32%),
+    #eaf0f7;
+}
+
+html[data-theme="light"] .contact-box {
+  background: linear-gradient(
+    120deg,
+    rgba(8, 127, 114, .08),
+    rgba(101, 84, 192, .08)
+  );
+}
+
+html[data-theme="light"] .timeline-item::before {
+  box-shadow: 0 0 0 5px var(--bg);
 }
 
 @media (max-width: 760px) {
