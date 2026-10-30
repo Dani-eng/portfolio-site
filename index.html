@@ -18,6 +18,13 @@
 
   <header>
     <nav class="container" aria-label="Main navigation">
+      <button
+        id="theme-toggle"
+        class="button secondary theme-toggle"
+        type="button"
+        aria-pressed="false">
+        Light mode
+      </button>
       <a class="brand" href="#home">Daniela <span>Caraeni</span></a>
       <div class="nav-links">
         <a href="#about">About</a>
@@ -25,6 +32,7 @@
         <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
+        <a href="#presentations">Presentations</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -46,6 +54,24 @@
         <div class="actions">
           <a class="button primary" href="#projects">Explore my work</a>
           <a class="button secondary" href="#contact">Get in touch</a>
+        </div>
+        <div class="actions" aria-label="Résumé PDF downloads">
+          <a
+            class="button secondary"
+            href="assets/Daniela_Caraeni_2page_CV_2026_US.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            U.S.-focused résumé (PDF)
+          </a>
+          <a
+            class="button secondary"
+            href="assets/Daniela_Caraeni_2page_CV_2026_Canada.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Canadian-focused résumé (PDF)
+          </a>
         </div>
         <div class="quick-facts" aria-label="Professional highlights">
           <span class="pill">Open to industry opportunities</span>
@@ -117,11 +143,15 @@
               <span class="tag">ANSYS Fluent</span>
               <span class="tag">ANSYS CFX</span>
               <span class="tag">ANSYS Workbench</span>
+              <span class="tag">ANSYS SpaceClaim</span>
               <span class="tag">OpenFOAM</span>
               <span class="tag">solids4foam</span>
               <span class="tag">CFD</span>
               <span class="tag">Fluid–structure interaction</span>
               <span class="tag">Multiphase flow</span>
+              <span class="tag">Proper orthogonal decomposition</span>
+              <span class="tag">XFEM</span>
+              <span class="tag">Level-set methods</span>
             </div>
           </article>
           <article class="card">
@@ -132,7 +162,9 @@
               <span class="tag">C/C++</span>
               <span class="tag">Fortran</span>
               <span class="tag">VBA</span>
+              <span class="tag">Bash scripting</span>
               <span class="tag">LaTeX</span>
+              <span class="tag">High-performance computing</span>
               <span class="tag">English — fluent</span>
               <span class="tag">French — intermediate</span>
             </div>
@@ -157,14 +189,18 @@
             <div class="project-meta">CFD · 2023</div>
             <h3>Vortex patterns around an oscillating cylinder</h3>
             <p>
-              Examined how a cylinder’s movement affects symmetric and
-              asymmetric wake behavior. Parallel runs on the Unity cluster
-              supported the computational study.
+              As the sole contributor, I conceived and developed the
+              investigation, ran OpenFOAM simulations in parallel on the Unity
+              cluster, and carried out post-processing. I searched for
+              symmetric vortex shedding comparable to patterns observed in
+              high-fidelity, high-Reynolds-number simulations.
             </p>
             <div class="tags">
+              <span class="tag">OpenFOAM</span>
+              <span class="tag">Unity Cluster HPC</span>
+              <span class="tag">Bash scripting</span>
               <span class="tag">Vortex-induced motion</span>
-              <span class="tag">HPC</span>
-              <span class="tag">Flow simulation</span>
+              <span class="tag">Post-processing</span>
             </div>
           </article>
 
@@ -173,14 +209,18 @@
             <div class="project-meta">Nonlinear dynamics · 2022</div>
             <h3>Harvesting energy from pendulum motion</h3>
             <p>
-              Compared single- and double-pendulum behavior across repeating
-              and chaotic motion to explore how nonlinear dynamics may affect
-              energy capture.
+              As the sole contributor, I conceived and developed the study and
+              performed the analysis and post-processing in MATLAB. I examined
+              single- and double-pendulum behavior across periodic and chaotic
+              regimes to investigate how chaotic pendulum systems can produce
+              energy for harvesting.
             </p>
             <div class="tags">
+              <span class="tag">MATLAB</span>
+              <span class="tag">Nonlinear dynamics</span>
               <span class="tag">Chaotic systems</span>
-              <span class="tag">Energy capture</span>
-              <span class="tag">Modeling</span>
+              <span class="tag">Energy harvesting</span>
+              <span class="tag">Post-processing</span>
             </div>
           </article>
 
@@ -189,14 +229,18 @@
             <div class="project-meta">Fluid–structure interaction · 2020</div>
             <h3>Paraglider flight as a coupled system</h3>
             <p>
-              Studied interactions between the canopy, suspension lines, and
-              pilot, including how pilot position, line stiffness, and weight
-              relate to stability.
+              As the sole contributor, I conceived and developed a MATLAB
+              model of paragliding as a fluid–structure interaction system and
+              performed the post-processing. I examined how pilot position,
+              line stiffness, and weight relate to stability and the onset of
+              instability.
             </p>
             <div class="tags">
+              <span class="tag">MATLAB</span>
+              <span class="tag">Fluid–structure interaction</span>
               <span class="tag">Aerodynamics</span>
               <span class="tag">Structural response</span>
-              <span class="tag">Stability</span>
+              <span class="tag">Stability analysis</span>
             </div>
           </article>
 
@@ -205,13 +249,20 @@
             <div class="project-meta">Published research · 2025</div>
             <h3>Computational assessment of coronary flow</h3>
             <p>
-              Contributed to a CFD study using proper orthogonal decomposition
-              to assess coronary physiology and wall shear stress.
+              As a joint contributor, I created coronary-artery CAD geometry
+              from medical images, prepared the geometry and mesh, ran CFD
+              simulations, and performed post-processing and analysis. The
+              study used proper orthogonal decomposition; higher modes may
+              help medical professionals assess coronary flow when placing
+              stents.
             </p>
             <div class="tags">
-              <span class="tag">Cardiovascular flow</span>
-              <span class="tag">POD</span>
-              <span class="tag">ANSYS Fluent</span>
+              <span class="tag">Medical-image processing</span>
+              <span class="tag">ANSYS SpaceClaim</span>
+              <span class="tag">Meshing</span>
+              <span class="tag">OpenFOAM</span>
+              <span class="tag">Proper orthogonal decomposition</span>
+              <span class="tag">CFD analysis</span>
             </div>
           </article>
 
@@ -220,27 +271,39 @@
             <div class="project-meta">Published research · 2020</div>
             <h3>Solidification modeling with an extended-FEM approach</h3>
             <p>
-              Contributed to research on a fluid–structure interaction approach
-              to modeling solidification, with relevance to ice buildup on
-              aircraft components.
+              I extended an existing finite-element code by adding an energy
+              model and XFEM capabilities to enable solidification modeling.
+              This involved Fortran development in an in-house CFD code and
+              supported prediction of the solidification front in multiphase
+              fluid–structure interaction cases, with relevance to ice buildup
+              on aircraft components.
             </p>
             <div class="tags">
-              <span class="tag">Extended FEM</span>
-              <span class="tag">Level set</span>
-              <span class="tag">Phase change</span>
+              <span class="tag">Fortran</span>
+              <span class="tag">In-house CFD code</span>
+              <span class="tag">XFEM</span>
+              <span class="tag">Energy model</span>
+              <span class="tag">Solidification</span>
+              <span class="tag">Multiphase FSI</span>
             </div>
           </article>
 
           <article class="card project-card">
             <div class="project-top" aria-hidden="true">◌</div>
-            <div class="project-meta">Research communication · 2021–2024</div>
+            <div class="project-meta">Research communication · 2019–2024</div>
             <h3>Sharing fluid-dynamics research</h3>
             <p>
-              Presented work at four APS Division of Fluid Dynamics meetings
-              and contributed visual research to the Gallery of Fluid Motion.
+              Presented collaborative research at AIAA SciTech and delivered
+              four consecutive presentations at APS Division of Fluid
+              Dynamics meetings from 2021 to 2024. APS work covered
+              fluid–structure interaction and computational fluid dynamics;
+              additional contributions included a DFD-Interact presentation
+              and poster session, and two Gallery of Fluid Motion works.
             </p>
             <div class="tags">
-              <span class="tag">Presentations</span>
+              <span class="tag">AIAA SciTech</span>
+              <span class="tag">APS Division of Fluid Dynamics</span>
+              <span class="tag">Technical presentations</span>
               <span class="tag">Flow visualization</span>
               <span class="tag">Collaboration</span>
             </div>
@@ -280,7 +343,6 @@
             >
               View publication <span aria-hidden="true">↗</span>
             </a>
-
           </article>
 
           <article class="card publication-card">
@@ -368,7 +430,7 @@
                 </div>
                 <p>
                   Conducted research on fluid–structure interaction, moving
-                  bodies, and numerical modeling. 
+                  bodies, and numerical modeling.
                 </p>
               </div>
               <div class="timeline-item">
@@ -398,7 +460,7 @@
               <div class="timeline-item">
                 <h3>Doctoral studies, Mechanical and Industrial Engineering</h3>
                 <div class="meta">
-                  University of Massachusetts Amherst · Studies concluded before degree completion.
+                  University of Massachusetts Amherst · ABD
                 </div>
               </div>
               <div class="timeline-item">
@@ -419,6 +481,214 @@
                 </p>
               </div>
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="presentations">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Research communication</div>
+          <h2>Selected presentations</h2>
+          <p>
+            Four consecutive APS Division of Fluid Dynamics presentations,
+            an AIAA SciTech presentation, and research contributions to the
+            Gallery of Fluid Motion.
+          </p>
+        </div>
+        <div class="grid two-col">
+          <article class="card">
+            <div class="project-meta">AIAA SciTech · 2019</div>
+            <h3>AIAA SciTech presentation</h3>
+            <p>
+              Presented collaborative research at AIAA SciTech. The
+              presentation is associated with the published work on an
+              extended-FEM approach to solidification.
+            </p>
+            <a
+              class="publication-link"
+              href="https://arc.aiaa.org/doi/10.2514/6.2019-0641"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View AIAA presentation record <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="project-meta">APS Division of Fluid Dynamics · 2021</div>
+            <h3>74th Annual Meeting</h3>
+            <p>
+              One of four consecutive APS DFD meeting presentations on
+              research spanning fluid–structure interaction and computational
+              fluid dynamics.
+            </p>
+            <a
+              class="publication-link"
+              href="https://meetings-archive.aps.org/dfd/2021/h14/8/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View meeting presentation <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="project-meta">APS Division of Fluid Dynamics · 2022</div>
+            <h3>75th Annual Meeting</h3>
+            <p>
+              Continued presenting research to the fluid-dynamics community,
+              sharing work related to computational fluid dynamics and
+              fluid–structure interaction.
+            </p>
+            <a
+              class="publication-link"
+              href="https://meetings-archive.aps.org/dfd/2022/q24/3/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View meeting presentation <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="project-meta">APS Division of Fluid Dynamics · 2023</div>
+            <h3>76th Annual Meeting</h3>
+            <p>
+              Presented research as part of four consecutive APS DFD meeting
+              appearances. APS contributions also included selection for the
+              DFD-Interact series and work in the Gallery of Fluid Motion.
+            </p>
+            <a
+              class="publication-link"
+              href="https://meetings-archive.aps.org/dfd/2023/j32/6/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View meeting presentation <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="project-meta">APS Division of Fluid Dynamics · 2024</div>
+            <h3>77th Annual Meeting</h3>
+            <p>
+              Completed four consecutive years of APS DFD presentations.
+              Other APS contributions included a poster on flow transitions
+              from jet formation to vortex shedding in kirigami and rigid
+              sheets, and a video on collective motion and wake reconfiguration
+              of free-oscillating cylinders in arrays.
+            </p>
+            <a
+              class="publication-link"
+              href="https://meetings-archive.aps.org/dfd/2024/c31/11/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View meeting presentation <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="project-meta">Graduate Research Symposium · 2025</div>
+            <h3>Dynamic Motion: Exploring Free-Oscillating Cylinders in Diverse Formations</h3>
+            <p>
+              Presented a poster to an interdisciplinary engineering audience
+              and received runner-up recognition for poster quality and
+              content from an independent faculty panel. Also delivered a
+              three-minute “sound bite” talk to graduate and undergraduate
+              engineering students.
+            </p>
+            <a
+              class="publication-link"
+              href="https://www.umass.edu/engineering/research/graduate-research-and-recognition-symposium"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View UMass Amherst College of Engineering event link <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<section id="github">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Code and projects</div>
+          <h2>GitHub</h2>
+          <p>
+            Explore my code and selected project repositories.
+          </p>
+        </div>
+        <div class="grid two-col">
+          <article class="card">
+            <h3>Selected repositories</h3>
+            <p>
+              Find my code and project work on GitHub.
+            </p>
+            <a
+              class="publication-link"
+              href="YOUR_GITHUB_URL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View my GitHub profile <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+ <section id="certifications">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Professional development</div>
+          <h2>Selected certifications</h2>
+          <p>
+            Additional training in aerospace, healthcare applications, and
+            project management.
+          </p>
+        </div>
+        <div class="grid two-col">
+          <article class="card">
+            <div class="project-meta">ISAE-SUPAERO · May 2026</div>
+            <h3>Fundamentals of Flight Mechanics Specialization</h3>
+            <a
+              class="publication-link"
+              href="https://www.coursera.org/account/accomplishments/specialization/ZVR7VGQKVYOY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View certificate <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="project-meta">Stanford Online · December 2022</div>
+            <h3>AI in Healthcare Specialization</h3>
+            <a
+              class="publication-link"
+              href="https://www.coursera.org/account/accomplishments/specialization/4R4GLPS8ARVU"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View certificate <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="project-meta">Google · August 2026</div>
+            <h3>Google Project Management Professional Certificate</h3>
+            <a
+              class="publication-link"
+              href="https://www.coursera.org/account/accomplishments/specialization/AU3RQ7E2FRVR"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View certificate <span aria-hidden="true">↗</span>
+            </a>
           </article>
         </div>
       </div>
@@ -458,5 +728,39 @@
       © <span id="year"></span> Daniela Caraeni · CFD &amp; Multiphysics Simulation
     </div>
   </footer>
+
+  <script>
+  const themeToggle = document.getElementById("theme-toggle");
+  const savedTheme = localStorage.getItem("portfolio-theme");
+
+  if (savedTheme === "light") {
+    document.documentElement.dataset.theme = "light";
+  }
+
+  function updateThemeButton() {
+    const isLight = document.documentElement.dataset.theme === "light";
+    themeToggle.textContent = isLight
+      ? "Dark mode"
+      : "Light mode";
+    themeToggle.setAttribute("aria-pressed", String(isLight));
+  }
+
+  updateThemeButton();
+
+  themeToggle.addEventListener("click", () => {
+    const isLight = document.documentElement.dataset.theme === "light";
+
+    if (isLight) {
+      delete document.documentElement.dataset.theme;
+      localStorage.setItem("portfolio-theme", "dark");
+    } else {
+      document.documentElement.dataset.theme = "light";
+      localStorage.setItem("portfolio-theme", "light");
+    }
+
+    updateThemeButton();
+  });
+</script>
+
 </body>
 </html>
