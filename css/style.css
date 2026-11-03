@@ -401,6 +401,122 @@ footer {
   outline-offset: 3px;
 }
 
+.media-carousel {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: .75rem;
+}
+
+.media-track {
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-auto-flow: column;
+  gap: 0;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.media-track::-webkit-scrollbar {
+  display: none;
+}
+
+.media-slide {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--panel);
+  scroll-snap-align: start;
+}
+
+.media-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: #0d1528;
+}
+
+.media-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.media-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.media-slide p {
+  margin: .75rem 0 0;
+  color: var(--muted);
+}
+
+.media-slide p a {
+  color: var(--accent);
+}
+
+.carousel-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--panel);
+  color: var(--text);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  border-color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .media-carousel {
+    gap: .35rem;
+  }
+
+  .carousel-button {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .media-slide {
+    padding: .75rem;
+  }
+}
+
+.media-slide .project-media img.poster-image {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: #0d1528;
+}
+
+.media-slide .video-media {
+  width: min(100%, 800px);
+  margin-inline: auto;
+}
+
+.media-slide .video-media iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
 /* Light theme */
 html[data-theme="light"] {
   color-scheme: light;
