@@ -610,8 +610,107 @@
             </a>
           </article>
         </div>
+
+<section id="research-media">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Posters &amp; Videos</h2>
+      <p>
+        Visual highlights of research contributions presented at conferences
+        and technical showcases.
+      </p>
+    </div>
+
+    <div class="media-carousel" role="region" aria-label="Research media carousel">
+      <button
+        class="carousel-button"
+        type="button"
+        aria-label="Previous item"
+      >
+        <span aria-hidden="true">‹</span>
+      </button>
+
+      <div class="media-track">
+        <article class="media-slide">
+          <a
+            class="media-frame"
+            href="https://gfm.aps.org/meetings/dfd-2024/673f8914d88f37002bbe76ce"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open the original poster page on the APS Gallery of Fluid Motion"
+          >
+            <img
+              src="assets/images/kirigami-sun.png"
+              alt="Poster about flow transitions from jet formation to vortex shedding on kirigami sheets"
+              loading="lazy"
+            >
+          </a>
+
+          <p>
+            Flow transitions from jet formation to vortex shedding on
+            kirigami sheets.
+            <a
+              href="https://gfm.aps.org/meetings/dfd-2024/673f8914d88f37002bbe76ce"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View the original APS page</a>
+          </p>
+        </article>
+
+        <article class="media-slide">
+          <div class="media-frame">
+            <iframe
+              src="https://www.youtube.com/embed/v0pm_kFfLv0"
+              title="Collective behavior of free-oscillating cylinders"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <p>
+            Numerical simulations examining the collective motion of
+            free-oscillating cylinders.
+            <a
+              href="https://gfm.aps.org/meetings/dfd-2024/673e5f58d88f375e670eb4c8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Open the original APS video page</a>
+          </p>
+        </article>
       </div>
-    </section>
+
+      <button
+        class="carousel-button"
+        type="button"
+        aria-label="Next item"
+      >
+        <span aria-hidden="true">›</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll(".media-carousel").forEach((carousel) => {
+    const track = carousel.querySelector(".media-track");
+    const slides = Array.from(track.querySelectorAll(".media-slide"));
+    const buttons = carousel.querySelectorAll(".carousel-button");
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      currentSlide = (index + slides.length) % slides.length;
+      track.scrollTo({
+        left: slides[currentSlide].offsetLeft - track.offsetLeft,
+        behavior: "smooth"
+      });
+    }
+
+    buttons[0].addEventListener("click", () => showSlide(currentSlide - 1));
+    buttons[1].addEventListener("click", () => showSlide(currentSlide + 1));
+  });
+</script>
 
 <section id="github">
       <div class="container">
