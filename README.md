@@ -10,6 +10,7 @@ Features:
 - Email and LinkedIn contact links
 - Light/dark theme toggle with the selected theme saved in browser storage
 - Accessible navigation, including a skip-to-content link
+- a carousel to display videos and posters for past presented work
 
 In progress:
 - Adding video and images for published research
