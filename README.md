@@ -14,5 +14,6 @@ Features:
 
 In progress:
 - Adding video and images for published research
+- Adding github links to selected projects in Github
 
 The website can be found at: https://dani-eng.github.io/portfolio-site/ 
