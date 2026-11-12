@@ -757,27 +757,6 @@
   </div>
 </section>
 
-<!-- Carousel controls -->
-<script>
-  document.querySelectorAll(".media-carousel").forEach((carousel) => {
-    const track = carousel.querySelector(".media-track");
-    const slides = Array.from(track.querySelectorAll(".media-slide"));
-    const buttons = carousel.querySelectorAll(".carousel-button");
-    let currentSlide = 0;
-
-    function showSlide(index) {
-      currentSlide = (index + slides.length) % slides.length;
-      track.scrollTo({
-        left: slides[currentSlide].offsetLeft - track.offsetLeft,
-        behavior: "smooth"
-      });
-    }
-
-    buttons[0].addEventListener("click", () => showSlide(currentSlide - 1));
-    buttons[1].addEventListener("click", () => showSlide(currentSlide + 1));
-  });
-</script>
-
 <!-- GitHub projects -->
 <section id="github">
   <div class="container">
@@ -796,7 +775,7 @@
         </p>
         <a
           class="publication-link"
-          href="YOUR_GITHUB_URL"
+          href="https://github.com/Dani-eng"
           target="_blank"
           rel="noopener noreferrer"
         >
